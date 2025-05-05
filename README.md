@@ -2,27 +2,9 @@
 
 ## Структура 
 
-project3/  
-├── db/                      # База данных  
-├── data/                    # Данные приложения  
-├── forms/                   # Формы приложения  
-├── static/                  # Статические файлы  
-│   ├── css/                # Стили  
-│   ├── img/                # Изображения  
-│   └── txt/                # Текстовые файлы  
-├── templates/               # HTML шаблоны  
-│   ├── base.html           # Базовый шаблон  
-│   ├── dashboard.html      # Панель управления  
-│   ├── chat.html           # Чат  
-│   ├── login.html          # Страница входа  
-│   ├── register.html       # Страница регистрации  
-│   ├── index.html          # Главная страница  
-│   ├── new_note.html       # Создание заметки  
-│   ├── edit_note.html      # Редактирование заметки  
-│   └── psychological_test.html # Психологический тест  
-├── ai.py                    # Модуль искусственного интеллекта  
-├── main.py                  # Основной файл приложения  
-├── resources.py             # Ресурсы приложения  
-└── requirements.txt         # Зависимости проекта  
+![image](https://github.com/user-attachments/assets/6bc4dd03-51c2-4873-8eb1-3e891f2c0612)
+
 
 ## Возможности
+
+
