@@ -7,3 +7,6 @@ pydantic
 wtforms
 flask
 flask-restful
+sqlalchemy-serializer
+google-genai
+SQLAlchemy
