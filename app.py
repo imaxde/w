@@ -202,5 +202,5 @@ def psychological_test(name):
     return render_template("psychological_test.html", survey=survey, title="Психологический тест", name=name)
     
 
-if __name__ == '__main__' or __name__ == 'aap':
+if __name__ == '__main__':
     main()
