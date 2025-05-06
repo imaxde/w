@@ -13,6 +13,9 @@ import os
 from werkzeug.utils import secure_filename
 
 
+print(__name__)
+
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "sample_key"
 login_manager = LoginManager()
