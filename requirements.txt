@@ -11,3 +11,4 @@ sqlalchemy-serializer
 google-genai
 SQLAlchemy
 gunicorn
+Flask-WTF
