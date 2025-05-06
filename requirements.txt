@@ -10,5 +10,4 @@ flask-restful
 sqlalchemy-serializer
 google-genai
 SQLAlchemy
-gunicorn
 Flask-WTF
