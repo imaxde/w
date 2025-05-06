@@ -13,9 +13,6 @@ import os
 from werkzeug.utils import secure_filename
 
 
-print(__name__)
-
-
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "sample_key"
 login_manager = LoginManager()
@@ -205,5 +202,5 @@ def psychological_test(name):
     return render_template("psychological_test.html", survey=survey, title="Психологический тест", name=name)
     
 
-if __name__ == '__main__':
+if __name__ == '__main__' or __name__ == 'aap':
     main()
