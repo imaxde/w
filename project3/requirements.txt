@@ -1,9 +1,0 @@
-sqlalchemy
-werkzeug
-flask-login
-requests
-protobuf
-pydantic
-wtforms
-flask
-flask-restful
