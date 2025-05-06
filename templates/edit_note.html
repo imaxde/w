@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="text-center">Редактировать запись</h2>
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="">
+                        {{ form.hidden_tag() }}
+                        
+                        <div class="text-center mb-4">
+                            <div class="mood-selector">
+                                <div class="emoji-container">
+                                    <label class="emoji-label">
+                                        <input type="radio" name="mood" value="1" class="emoji-input" {% if form.mood.data == 1 %}checked{% endif %}>
+                                        <span class="emoji">😢</span>
+                                    </label>
+                                    <label class="emoji-label">
+                                        <input type="radio" name="mood" value="2" class="emoji-input" {% if form.mood.data == 2 %}checked{% endif %}>
+                                        <span class="emoji">😞</span>
+                                    </label>
+                                    <label class="emoji-label">
+                                        <input type="radio" name="mood" value="3" class="emoji-input" {% if form.mood.data == 3 %}checked{% endif %}>
+                                        <span class="emoji">😐</span>
+                                    </label>
+                                    <label class="emoji-label">
+                                        <input type="radio" name="mood" value="4" class="emoji-input" {% if form.mood.data == 4 %}checked{% endif %}>
+                                        <span class="emoji">😊</span>
+                                    </label>
+                                    <label class="emoji-label">
+                                        <input type="radio" name="mood" value="5" class="emoji-input" {% if form.mood.data == 5 %}checked{% endif %}>
+                                        <span class="emoji">😄</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            {{ form.text.label(class="form-label") }}
+                            {{ form.text(class="form-control", rows="5") }}
+                            {% if form.text.errors %}
+                                <div class="alert alert-danger">
+                                    {% for error in form.text.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+
+                        <div class="text-center mt-4">
+                            {{ form.submit(class="btn btn-primary") }}
+                            <a href="/" class="btn btn-secondary">Отмена</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

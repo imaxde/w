@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">{{ title }}</h1>
+    <form method="POST" action="{{ url_for('psychological_test', name=name) }}">
+        {% for question in survey %}
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Вопрос {{ loop.index }}</h5>
+                <p class="card-text">{{ question }}</p>
+                <div class="form-group">
+                    <textarea class="form-control" name="answer{{ loop.index }}" rows="3" required></textarea>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Отправить ответы</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
