@@ -1,5 +1,8 @@
 # Личный ИИ-психолог
 
+[.](https://docs.google.com/presentation/d/13JGrx_64-wyT8Y5u3ZM7I-42_ND7WCWQaTxd8n___Fk/edit)
+
+
 ## Структура 
 
 ![image](https://github.com/user-attachments/assets/6bc4dd03-51c2-4873-8eb1-3e891f2c0612)
